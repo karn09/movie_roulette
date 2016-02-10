@@ -4,7 +4,7 @@ WHERE m.id = md.movie_id
 AND d.id = md.director_id
 AND m.rank > 7.0
 AND mg.movie_id = m.id
-AND mg.genre = 'Drama'
+AND mg.genre = ?
 AND m.year > 1990
 ORDER BY RANDOM()
 LIMIT 1;
